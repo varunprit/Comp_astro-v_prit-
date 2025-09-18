@@ -14,7 +14,7 @@ def main():
     parser.add_argument("a", type=float, nargs='?', default=0, help="Lower limit of integration (default: 0)") #nargs is to make it use default if user doesnt give an input
     parser.add_argument("b", type=float, nargs='?', default=3, help="Upper limit of integration (default: 3)")
     parser.add_argument("step", type=float, nargs='?', default=0.1, help="Size between each point (default: 0.1)")
-    parser.add_argument("--plot", action="store_true", help="Show a plot of the function and its integral")
+    parser.add_argument("--plot", action="store_true", help="Show a plot of the function and its integral") #--plot means its optional
     args = parser.parse_args()
 
     a = args.a
